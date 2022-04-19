@@ -1,14 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
+    <title>Parcel Sandbox</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    
+    <script
+      src="https://kit.fontawesome.com/f40aae2064.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="src/style.css" />
   </head>
+
   <body>
-    <h1>Hello</h1>
-    <script src="script.js"></script>
+    <div class="container">
+      <div class="weather-app">
+      <div class="row">
+        <div class="col-6">
+          <div class="searchCity">
+            <form id = "search-form" >
+              <input 
+              type="search" 
+              placeholder = "Enter a City or Zip Code"
+              autocomplete = "off"
+              autofocus = "on"
+              id="search-city-input" />
+              <input 
+              type = "submit"
+              value = "Search"
+              id = "search-button" />
+            </form>
+            <button class="currentLocation">Current Location</button>
+          </div>
+          <h3>
+            <br />
+          </h3>
+          <h4>Hi 50° | Lo 26°</h4>
+          <h5> Precipitation 9% <br />Wind NE 2mph</h5>
+        </div>
+        <div class="col-6">
+          <div class ="bigInfo">
+          <h2 id="date"></h2>
+          <br />
+          <div class="weatherIconBig">
+          🌦
+          </div>
+          <span class="tempElement" id="currentTemp"></span>
+          <span class="tempElement2"></span>
+          <span class="units">
+            <a href="#" id="celsius-link">°C</a> | 
+            <a href="#" id="fahrenheit-link"> °F </a>
+          </span>
+        </div>
+      </div>
+      <hr />
+      <hr />
+<div class="row">
+  <div class="col-2">
+    <div class="card">
+      <div class="card-body">
+        <p class="day1">Sun<br/>2/21</p>
+        <div class="weatherIcon1">⛈</div>
+        <p class="range1">Hi 50° | Lo 26°</p>
+        <p class="precip1"> Precipitation 9%<br />Wind NE 2mph</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+      <div class="card">
+        <div class="card-body">
+          <p class="day2">Mon<br/>2/22</p>
+          <div class="weatherIcon2">🌦</div>
+          <p class="range2">Hi 50° | Lo 26°</p>
+          <p class="precip2">Precipitation 9%<br />Wind NE 2mph</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="day3">Tues<br/>2/23</p>
+            <div class="weatherIcon3">🌤</div>
+            <p class="range3">Hi 50° | Lo 26°</p>
+            <p class="precip3">Precipitation 9%<br />Wind NE 2mph</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-2">
+    <div class="card">
+      <div class="card-body">
+        <p class="day4">Wed<br/>2/24</p>
+        <div class="weatherIcon4">❄️</div>
+        <p class="range4">Hi 50° | Lo 26°</p>
+        <p class="precip4"> Precipitation 9%<br />Wind NE 2mph</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-2">
+      <div class="card">
+        <div class="card-body">
+          <p class="day5">Thurs<br/>2/25</p>
+          <div class="weatherIcon5">🌤</div>
+          <p class="range5">Hi 50° | Lo 26°</p>
+          <p class="precip5"> Precipitation 9%<br />Wind NE 2mph</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+        <div class="card">
+          <div class="card-body">
+            <p class="day6">Fri<br/>2/26</p>
+            <div class="weatherIcon6">☀️</div>
+            <p class="range6">Hi 50° | Lo 26°</p>
+            <p class="precip6"> Precipitation 9%<br />Wind NE 2mph</p>
+          </div>
+        </div>
+      </div>
+</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
   </body>
 </html>
