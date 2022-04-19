@@ -1,4 +1,96 @@
-h1 {
+body {
+  font-family: "PT Serif", serif;
+}
+
+h3 {
+  margin-top: 50px;
+  font-size: 35px;
+}
+
+#current-day {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+h4 {
+  margin-top: 20px;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
+.col-6 {
+  margin-bottom: 50px;
+}
+
+.searchCity {
+  margin-top: 50px;
+}
+
+.bigInfo {
+  margin-top: 50px;
   text-align: center;
-  color: Blue;
+  font-size: 32px;
+  line-height: 35px;
+}
+
+.weatherIconBig {
+  font-size: 100px;
+  margin: 20px 0 50px 0;
+}
+
+.card-body {
+  padding: 30px 10px 20px 10px;
+}
+
+.col-2 {
+  text-align: center;
+}
+
+.weatherIcon1,
+.weatherIcon2,
+.weatherIcon3,
+.weatherIcon4,
+.weatherIcon5,
+.weatherIcon6 {
+  font-size: 60px;
+}
+
+.day1,
+.day2,
+.day3,
+.day4,
+.day5,
+.day6 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  line-height: 25px;
+}
+
+.range1,
+.range2,
+.range3,
+.range4,
+.range5,
+.range6 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.precip1,
+.precip2,
+.precip3,
+.precip4,
+.precip5,
+.precip6 {
+  font-size: 12px;
+}
+
+.weather-app {
+  border: 1px solid black;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 15px;
+  max-width: 1000px;
 }
