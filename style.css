@@ -94,3 +94,9 @@ h5 {
   border-radius: 15px;
   max-width: 1000px;
 }
+
+.git-link {
+  font-size: small;
+  margin: 20px auto;
+  max-width: 1000px;
+}
